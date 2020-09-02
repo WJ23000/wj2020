@@ -9,10 +9,6 @@ import './index.styl'
 
 export default class Index extends Component<any> {
 
-  config = {
-    navigationBarTitleText: '首页'
-  }
-
   state= {
     title: "首页",
     type: true

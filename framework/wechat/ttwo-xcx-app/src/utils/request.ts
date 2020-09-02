@@ -43,7 +43,7 @@ export default async function fetch(options) {
 			}
 		}).catch(err => {
 			Taro.showToast({
-				title: '未知异常，请查看控制台',
+				title: '数据请求出现未知异常，请查看控制台',
 				icon: 'none'
 			})
 			return reject(err)

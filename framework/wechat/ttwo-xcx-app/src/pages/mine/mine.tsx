@@ -8,10 +8,6 @@ import './mine.styl'
 
 export default class Mine extends Component<any> {
 
-  config = {
-    navigationBarTitleText: '我的'
-  }
-
   state= {
     title: "我的",
     type: "mine"

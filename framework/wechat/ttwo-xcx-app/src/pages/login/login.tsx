@@ -5,8 +5,8 @@ import './login.styl'
 
 export default class Login extends Component<any> {
 
-  config = {
-    navigationBarTitleText: '登录'
+  state= {
+    title: "登录"
   }
 
   componentWillMount () { }

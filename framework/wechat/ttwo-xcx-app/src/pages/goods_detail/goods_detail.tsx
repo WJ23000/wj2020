@@ -2,22 +2,27 @@ import Taro from '@tarojs/taro'
 import React, { Component } from 'react'
 import { View, Text } from '@tarojs/components'
 import classnames from 'classnames'
-import './address.styl'
+import './goods_detail.styl'
 
-export default class Address extends Component<any> {
+export default class OrderPay extends Component<any> {
 
   state= {
-    title: "收货地址"
+    title: "商品详情"
+  }
+
+  // 对应onLoad,页面创建时执行
+  componentWillMount () { 
+    
   }
 
   componentDidMount () { 
-
+    
   }
 
   render () {
     return (
       <View className='index'>
-        <Text>收货地址</Text>
+        <View>订单支付</View>
       </View>
     )
   }

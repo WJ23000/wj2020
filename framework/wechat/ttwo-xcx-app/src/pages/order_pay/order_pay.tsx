@@ -6,18 +6,17 @@ import './order_pay.styl'
 
 export default class OrderPay extends Component<any> {
 
-  config = {
-    navigationBarTitleText: '订单支付'
-  }
-
   state= {
     title: "订单支付"
   }
 
   // 对应onLoad,页面创建时执行
   componentWillMount () { 
-    const {id, type} = Taro.getCurrentInstance().router.params
-    console.log("接收的参数",id,type)
+    const {id, title} = Taro.getCurrentInstance().router.params
+    Taro.setNavigationBarTitle({
+      title: title
+    });
+    console.log("接收的参数",id,title)
   }
 
   componentDidMount () { 

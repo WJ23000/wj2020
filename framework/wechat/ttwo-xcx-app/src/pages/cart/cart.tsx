@@ -6,11 +6,7 @@ import { getGoodsList } from '../../service/index'
 import './cart.styl'
 
 export default class Cart extends Component<any> {
-
-  config = {
-    navigationBarTitleText: '购物车'
-  }
-
+  
   state= {
     title: "购物车"
   }
@@ -24,7 +20,7 @@ export default class Cart extends Component<any> {
   // 跳转到订单支付页
   onOrderPay() {
     Taro.navigateTo({
-      url: `/pages/order_pay/order_pay?id=2&type=cart`
+      url: `/pages/order_pay/order_pay?id=2&title=订单支付`
     })    
   }
 
