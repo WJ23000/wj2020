@@ -1,0 +1,5 @@
+<view class="mine">
+  <button type="primary" onTap="getAuthCode">
+    获取授权码
+  </button>
+</view>

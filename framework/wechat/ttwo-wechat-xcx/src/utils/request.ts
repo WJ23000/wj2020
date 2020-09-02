@@ -6,7 +6,7 @@ const CODE_SUCCESS = 200 // 成功状态
 const CODE_AUTH_EXPIRED = 401 // 无接口访问权限
 const CODE_ERROR = 403 // 接口不存在
 
-export default async function fetch(options) {
+export default async function fetchRequest(options) {
 	const { url, payload, method = 'GET', showToast = true } = options
 	const token = await getStorageSync('token') ? await getStorageSync('token') : 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJtc2ciOiIiLCJuYW1lIjoid2FuZ2p1biIsInR5cGUiOiIxIiwiZXhwIjoxNTk4OTQ2NTQ1fQ.Q-lvWFyoV7THPXJXm5K2bo5l-5Yrcy4kqm1iWxzrwAw'
 	const header = {

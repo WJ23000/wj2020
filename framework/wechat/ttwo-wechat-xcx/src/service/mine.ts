@@ -1,8 +1,8 @@
-import fetch from '../utils/request'
+import fetchRequest from '../utils/request'
 const baseUrl = '/iot-service-course/api/course';
 
 export function getGoodsList(query:{id: string}) {
-	return fetch({
+	return fetchRequest({
 		url: `${baseUrl}/list`,
     method: 'GET',
     params: query
@@ -10,7 +10,7 @@ export function getGoodsList(query:{id: string}) {
 }
 
 export function getCollection(data) {
-	return fetch({
+	return fetchRequest({
 		url: `${baseUrl}/collection`,
     method: 'POST',
     data

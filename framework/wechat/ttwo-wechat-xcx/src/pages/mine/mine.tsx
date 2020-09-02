@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import { View, Text } from '@tarojs/components'
 import classnames from 'classnames'
 import GoodsList from '../../components/goods_list/goods_list'
-import { getGoodsList } from '../../service/index'
+import { getGoodsList } from '../../service/mine'
 import './mine.styl'
 
 export default class Mine extends Component<any> {

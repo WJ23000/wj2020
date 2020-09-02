@@ -4,7 +4,7 @@ import { View, Text } from '@tarojs/components'
 import classnames from 'classnames'
 import { AtButton } from 'taro-ui'
 import "taro-ui/dist/style/components/button.scss" // 按需引入
-import { getGoodsList } from '../../service/index'
+import { getGoodsList } from '../../service/classify'
 import './classify.styl'
 
 export default class Classify extends Component<any> {

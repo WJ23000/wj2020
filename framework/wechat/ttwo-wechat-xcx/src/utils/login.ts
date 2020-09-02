@@ -3,7 +3,7 @@ import { setStorageSync } from './storage'
 import { doLogin } from '../service/user'
 
 // 用户授权登录
-export function login() {
+export function userLogin() {
 	Taro.login({
 		success: function (res) {
 			if (res.code) {
@@ -21,7 +21,7 @@ export function login() {
 }
 
 // token失效重新获取token
-export function checkSession() {
+export function userCheckSession() {
 	Taro.checkSession({
 		success: function () {
 		  //session_key 未过期，并且在本生命周期一直有效

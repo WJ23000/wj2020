@@ -1,0 +1,4 @@
+<view class="index">
+  <view>{{title}}</view>
+  <view onTap="onTitle">点击事件触发</view>
+</view>
