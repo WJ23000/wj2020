@@ -8,7 +8,7 @@ export function userLogin() {
 		success: function (res) {
 			if (res.code) {
 				//发起网络请求
-				doLogin({code: res.code}).then(res=>{
+				doLogin({ code: res.code }).then(res => {
 					console.log("用户授权信息", res)
 					// 设置token
 					// setStorageSync("token", res.token)
@@ -24,11 +24,11 @@ export function userLogin() {
 export function userCheckSession() {
 	Taro.checkSession({
 		success: function () {
-		  //session_key 未过期，并且在本生命周期一直有效
+			//session_key 未过期，并且在本生命周期一直有效
 		},
 		fail: function () {
-		  // session_key 已经失效，需要重新执行登录流程
-		  this.login() //重新登录
+			// session_key 已经失效，需要重新执行登录流程
+			this.login() //重新登录
 		}
 	})
 }

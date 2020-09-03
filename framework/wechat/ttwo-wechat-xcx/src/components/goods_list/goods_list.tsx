@@ -20,7 +20,7 @@ export default class GoodsList extends Component<any> {
       <View className='goods-list'>
         <View>商品列表</View>
         <View>来自于{type}</View>
-        <View onClick={this.onClickParent.bind(this,"A","B")}>触发父组件方法</View>
+        <View onClick={this.onClickParent.bind(this, "A", "B")}>触发父组件方法</View>
       </View>
     )
   }

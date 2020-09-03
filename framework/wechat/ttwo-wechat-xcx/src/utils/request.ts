@@ -22,7 +22,7 @@ export default async function fetchRequest(options) {
 
 	return new Promise((resolve, reject) => {
 		return Taro.request({
-			url: API_URL+url,
+			url: API_URL + url,
 			method,
 			data: payload,
 			header
@@ -35,7 +35,7 @@ export default async function fetchRequest(options) {
 				Taro.navigateTo({
 					url: '/pages/login/login'
 				})
-			} else if (code === CODE_ERROR){
+			} else if (code === CODE_ERROR) {
 				Taro.showToast({
 					title: '请检查API接口地址是否正确',
 					icon: 'none'
