@@ -1,3 +1,4 @@
 <view class="mine">
-  我的
+  <view>我的=====》测试组件通信</view>
+  <goodslist type="{{type}}" onClickChild="onChild"></goodslist>
 </view>

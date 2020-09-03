@@ -26,9 +26,10 @@ export default class Classify extends Component<any> {
   }
 
   onTitle() {
-    Taro.showLoading({
-			title: '已触发事件'
-		})
+    Taro.showToast({
+      title: '已触发',
+      icon: 'none'
+    })
   }
 
   componentWillUnmount () { }
@@ -41,7 +42,7 @@ export default class Classify extends Component<any> {
     return (
       <View className='classify'>
         <View>分类</View>
-        <AtButton onClick={this.onTitle.bind(this)} type='primary'>打开</AtButton>
+        <View onClick={this.onTitle.bind(this)}>触发单击事件</View>
       </View>
     )
   }

@@ -6,6 +6,7 @@ export default {
     'pages/mine/mine',
     'pages/login/login',
     'pages/address/address',
+    'pages/goods_detail/goods_detail',
     'pages/order_pay/order_pay'
   ],
   tabBar: {

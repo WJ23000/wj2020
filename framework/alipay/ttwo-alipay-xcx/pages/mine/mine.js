@@ -1,6 +1,9 @@
 import { getGoodsList } from '../../service/mine'
 
 Page({
+  data: {
+    type: "mine"
+  },
   onLoad(query) {
     
   },
@@ -13,6 +16,10 @@ Page({
   },
   onShow() {
     // 页面显示
+  },
+  // 子组件触发事件
+  onChild(e) {
+    console.log("子组件成功触发父组件方法",e);
   },
   onHide() {
     // 页面隐藏

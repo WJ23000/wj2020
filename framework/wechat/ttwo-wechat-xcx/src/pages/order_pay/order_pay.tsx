@@ -7,7 +7,8 @@ import './order_pay.styl'
 export default class OrderPay extends Component<any> {
 
   state= {
-    title: "订单支付"
+    title: "",
+    type: "order"
   }
 
   // 对应onLoad,页面创建时执行
@@ -16,6 +17,10 @@ export default class OrderPay extends Component<any> {
     Taro.setNavigationBarTitle({
       title: title
     });
+    this.setState({
+      title: title,
+      type: this.state.type+title
+    })
     console.log("接收的参数",id,title)
   }
 
@@ -24,9 +29,11 @@ export default class OrderPay extends Component<any> {
   }
 
   render () {
+    const {title, type} = this.state
     return (
       <View className='index'>
-        <View>订单支付</View>
+        <View>{title}</View>
+        <View>{type}</View>
       </View>
     )
   }

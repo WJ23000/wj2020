@@ -1,3 +1,4 @@
 <view class="classify">
-  分类
+  <view>分类</view>
+  <view onTap="onTitle">触发单击事件</view>
 </view>

@@ -4,5 +4,5 @@ export default {
   navigationBarTextStyle: 'white',  // 导航栏标题颜色,仅支持black/white
   backgroundColor: '#ffffff', // 窗口的背景色
   backgroundTextStyle: 'dark', // 下拉背景字体、loading 图的样式，仅支持dark/light
-  enablePullDownRefresh: true // 是否开启下拉刷新，详见页面相关事件处理函数。
+  enablePullDownRefresh: true // 是否开启下拉刷新，详见页面相关事件处理函数
 }

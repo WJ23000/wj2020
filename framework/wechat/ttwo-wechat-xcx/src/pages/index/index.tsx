@@ -11,7 +11,25 @@ export default class Index extends Component<any> {
 
   state= {
     title: "首页",
-    type: true
+    type: false,
+    goodsList: [
+      {
+        name: "商品1",
+        price: 100
+      },
+      {
+        name: "商品2",
+        price: 200
+      },
+      {
+        name: "商品3",
+        price: 300
+      },
+      {
+        name: "商品4",
+        price: 400
+      }
+    ]
   }
 
   // 对应onLoad,页面创建时执行
@@ -34,13 +52,22 @@ export default class Index extends Component<any> {
   componentDidHide () { }
 
   render () {
-    const { title, type } = this.state
+    const { title, type, goodsList } = this.state
     return (
       <View className='index'>
         <View>{title}</View>
-        <View className={classnames(type ? 'red': 'blue')}>测试classnames</View>
+        <View className={classnames('name-test', type ? 'red': 'blue')}>测试classnames</View>
+        {/* 按条件渲染 */}
         {type ? <View>1</View>: <View>2</View>}
         {type && <View>3</View>}
+        {/* for循环渲染 */}
+        <View className='goods-list'>
+          {goodsList.map((item,index) => {
+            return (
+              <View>{item.name}-----{item.price}</View>
+            )
+          })}
+        </View>
       </View>
     )
   }

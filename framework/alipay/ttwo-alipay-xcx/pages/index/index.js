@@ -2,7 +2,26 @@ import { getGoodsList } from '../../service/index'
 
 Page({
   data: {
-    title: "首页"
+    title: "首页",
+    type: 6,
+    goodsList: [
+      {
+        name: "商品1",
+        price: 100
+      },
+      {
+        name: "商品2",
+        price: 200
+      },
+      {
+        name: "商品3",
+        price: 300
+      },
+      {
+        name: "商品4",
+        price: 400
+      }
+    ]
   },
   onLoad(query) {
     
@@ -12,12 +31,6 @@ Page({
     getGoodsList({id: "1"}).then(res=>{
       console.log("首页====>",res);
     })
-  },
-  onTitle(){
-     my.showToast({
-      type: 'none',
-      content: '已触发'
-    });
   },
   onShow() {
     // 页面显示

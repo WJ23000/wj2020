@@ -44,6 +44,9 @@ export default async function fetchRequest(options) {
 				});
 			}
 		}).catch(err => {
+			my.hideLoading({
+        page: this  // 防止执行时已经切换到其它页面，page 指向不准确
+      });
 			my.showToast({
 				type: 'none',
 				content: '数据请求出现未知异常，请查看控制台',

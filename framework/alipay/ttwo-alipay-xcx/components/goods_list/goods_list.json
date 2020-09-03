@@ -1,6 +1,3 @@
 {
-  "component": true, 
-  "usingComponents": {
-    "other":"../other/index"
-  }
+  "component": true
 }

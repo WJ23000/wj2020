@@ -1,10 +1,13 @@
 {
   "pages": [
-    "pages/login/login",
     "pages/index/index",
     "pages/classify/classify",
     "pages/cart/cart",
-    "pages/mine/mine"
+    "pages/mine/mine",
+    "pages/login/login",
+    "pages/address/address",
+    "pages/goods_detail/goods_detail",
+    "pages/order_pay/order_pay"
   ],
   "tabBar": {
     "items": [{

@@ -1,0 +1,7 @@
+page {
+  background: #ffffff
+}
+.example {
+  font-size: 24rpx;
+  color: red
+}

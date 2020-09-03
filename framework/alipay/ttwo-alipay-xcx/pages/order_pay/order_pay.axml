@@ -1,0 +1,4 @@
+<view class="address">
+  <view>{{title}}</view>
+  <view>{{type}}</view>
+</view>

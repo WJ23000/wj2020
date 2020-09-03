@@ -42,6 +42,7 @@ export default async function fetchRequest(options) {
 				})
 			}
 		}).catch(err => {
+			Taro.hideLoading()
 			Taro.showToast({
 				title: '数据请求出现未知异常，请查看控制台',
 				icon: 'none'

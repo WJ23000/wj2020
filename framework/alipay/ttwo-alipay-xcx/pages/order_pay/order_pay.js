@@ -1,24 +1,22 @@
-import { getGoodsList } from '../../service/cart'
+import { userLogin } from '../../utils/login'
 
 Page({
+  data: {
+    title: "",
+    type: "order"
+  },
   onLoad(query) {
-    
+    console.log("接收的参数",query)
+    this.setData({
+      title: query.title,
+      type: this.data.type+query.title
+    })
   },
   onReady() {
     // 页面加载完成
-    // 页面加载完成
-    getGoodsList({id: "1"}).then(res=>{
-      console.log("购物车====>",res);
-    })
   },
   onShow() {
     // 页面显示
-  },
-  onOrderPay() { 
-    // 跳转到订单支付页
-    my.navigateTo({
-      url: `/pages/order_pay/order_pay?id=2&title=订单支付`
-    })
   },
   onHide() {
     // 页面隐藏

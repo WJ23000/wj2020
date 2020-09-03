@@ -28,7 +28,7 @@ export default class Cart extends Component<any> {
     return (
       <View className='index'>
         <View>购物车</View>
-        <View onClick={this.onOrderPay.bind(this)}>调转到订单支付页</View>
+        <View onClick={this.onOrderPay.bind(this)}>跳转到订单支付页</View>
       </View>
     )
   }

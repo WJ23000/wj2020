@@ -14,6 +14,12 @@ Page({
   onShow() {
     // 页面显示
   },
+  onTitle() {
+    my.showToast({
+      content: '已触发',
+      type: 'none'
+    });
+  },
   onHide() {
     // 页面隐藏
   },

@@ -1,4 +1,10 @@
 <view class="index">
-  <view>{{title}}</view>
-  <view onTap="onTitle">点击事件触发</view>
+  <view class="title">{{title}}</view>
+  <view class="example">字体大小和颜色</view>
+  <view a:if="{{type > 5}}"> 1 </view>
+  <view a:elif="{{type > 2}}"> 2 </view>
+  <view a:else> 3 </view>
+  <view a:for="{{goodsList}}" a:key="index">
+    {{item.name}}-----{{item.price}}
+  </view>
 </view>
